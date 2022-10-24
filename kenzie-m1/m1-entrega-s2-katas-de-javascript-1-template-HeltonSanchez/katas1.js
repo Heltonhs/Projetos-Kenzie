@@ -65,7 +65,23 @@ Exercício 3
 
     stringElement("algorítmos", 7);
     ⁠// Retorna M pois esta é a letra da posição 7.
+    
+        MAPA LÓGICO
+    1. crie uma função chamada stringElement
+    2. crie 2 parametros, um referenciando a palavra do parametro e uma referenciando a posição do caractere pedida no parametro
+    3. criar um loop para que reconheça todo length do parametro string
+    4. percorra ate o caracter estipulado pelo parametro number
+    5. retorne o console a baixo do loop com a string "Retorna M pois esta é a letra da posição 7."
+    6. chame a função passando os 2 parametros
 */
+    function stringElement(string, number){
+        let posicao = ""
+        for(let i = 0; i < number; i++){
+            posicao = string[i]
+        }
+        console.log(`Retorna ${posicao.toUpperCase()} pois esta é a letra da posição ${number}.`)
+    }
+    stringElement("Helton", 3)
 
 /*
  Exercício 4
